@@ -1,0 +1,49 @@
+
+
+.width {
+    background-color: #fceb21;
+    background-color: #fdff00;    
+}
+
+.contacts {
+    padding: 50px 0;
+    text-align: right;
+    margin: 0 auto;
+    width: 90%;
+    max-width: 600px;
+    h2 {
+        text-transform: uppercase;
+        font-weight: 900;
+        font-size: 3rem;
+        margin: 0;
+        line-height: 1.2em;
+        text-align: center;
+    }
+    .my {
+        text-transform: uppercase;
+        font-weight: 600;
+        font-size: 1.2rem;
+        line-height: 1em;
+        color: #1f203a;
+        margin: 0 20px 0 0;
+    }
+    .blockConnect {
+        display: flex;
+        align-items: center;
+        justify-content: end;
+        svg {
+            fill: #1f203a;
+        }
+    }
+    .contIcon {
+        svg   {
+            width: 80px;
+            height: 80px;
+        }
+        img {
+            width: 65px;
+            height: 63px;
+            padding: 0 7px 0 7px;
+        }
+    }
+}
