@@ -9,6 +9,7 @@ const Profile = () => {
     const [isShow, setIsShow] = useState(false);
     const [isShow2, setIsShow2] = useState(false);
 
+    const [render, setRender] = useState(0)
     const [isMovePhoto, setIsMovePhoto] = useState(false)
     const [photo, isPhoto] = useState({
         next : 1,
@@ -22,19 +23,31 @@ const Profile = () => {
     }
 
     useEffect(()=>{
-
+        const n = photo.next;
+        console.log(photo);
         setTimeout(()=>{
+
             setIsMovePhoto(true)
             setTimeout(()=>{
-                setIsMovePhoto(false)
                 isPhoto({
-                    next : 2,
-                    current : 1
+                    next : n,
+                    current : n
                 })
-            },1000)
-        },4000)
+            },1200)
 
-    },[photo])
+            setTimeout(()=>{
+                const next = photos.length - 1 === n ? 0 :  n + 1
+                isPhoto({
+                    next : next,
+                    current : n
+                })
+                    setIsMovePhoto(false)
+                setRender(render + 1)
+            },2200)
+
+        },2000)
+
+    },[render])
 
 
     // console.log(setIsMovePhoto);
