@@ -1,8 +1,9 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.6b0d249a.css",
-    "main.js": "/portfolio/static/js/main.b6c24d71.js",
+    "main.css": "/portfolio/static/css/main.ce84f3ce.css",
+    "main.js": "/portfolio/static/js/main.58903c3f.js",
     "static/media/shutterstock.mp4": "/portfolio/static/media/shutterstock.ec410a200103947bf676.mp4",
+    "static/media/riding.MP4": "/portfolio/static/media/riding.59fbf77e364109939fab.MP4",
     "static/media/swimm.jpg": "/portfolio/static/media/swimm.0537a42fc36e76265464.jpg",
     "static/media/999.jpg": "/portfolio/static/media/999.987aa943bccd60154726.jpg",
     "static/media/5357.jpg": "/portfolio/static/media/5357.04b946f169f20edc63d5.jpg",
@@ -13,11 +14,11 @@
     "static/media/restaurant-pos-en.webp": "/portfolio/static/media/restaurant-pos-en.8dccc2f2f836016a9a4b.webp",
     "static/media/emm.svg": "/portfolio/static/media/emm.58a7d06949d46f2932ef4dea66388006.svg",
     "index.html": "/portfolio/index.html",
-    "main.6b0d249a.css.map": "/portfolio/static/css/main.6b0d249a.css.map",
-    "main.b6c24d71.js.map": "/portfolio/static/js/main.b6c24d71.js.map"
+    "main.ce84f3ce.css.map": "/portfolio/static/css/main.ce84f3ce.css.map",
+    "main.58903c3f.js.map": "/portfolio/static/js/main.58903c3f.js.map"
   },
   "entrypoints": [
-    "static/css/main.6b0d249a.css",
-    "static/js/main.b6c24d71.js"
+    "static/css/main.ce84f3ce.css",
+    "static/js/main.58903c3f.js"
   ]
 }
