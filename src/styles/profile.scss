@@ -1,15 +1,12 @@
+
 .container1 {
     background-color: #fceb21;
     background-color: #fdff00;
-
-    margin-top: 500px; // remove
-
     .img {
         position: relative;
         width: 50%;
-        background-color: red;
         z-index: 10;
-        overflow: hidden;
+        //overflow: hidden;
 
         .profile-img {
 
@@ -18,26 +15,22 @@
                 left: 0;
                 right: 0;
                 top: 0;
-                // margin: auto;
-                // top: 40px;
-                // max-width: 500px;
-
-
-
-                width: 270px;
-                height: 500px;
+                height: 640px;
+                margin: auto;
             }
 
             .next-img-c {
                 .next-img {
                     left: 0;
-                    width: 270px;
-                    height: 500px;
+                    height: 640px;
                     position: absolute;
-                    top: -500px;
+                    top: -640px;
+                    margin: auto;
+                    left: 0;
+                    right: 0;
                     &.move {
                         transition: all 1s;
-                        top: 0;
+                        top: 0;  
                     }
                 }
             }
@@ -48,11 +41,12 @@
     h1 {
         letter-spacing: 5px;
         position: absolute;
-        top: 100%;
+        top: 95%;
         left: 45%;
         font-size: 6em;
         color: #fff;
         width: 110%;
+        z-index: 10;
     }
 
     .objective_block {
@@ -64,6 +58,7 @@
             box-sizing: border-box;
             line-height: 1.5;
             font-size: 1.5rem;
+            transition: all 2s;
         }
 
         img {
@@ -79,7 +74,7 @@
     //background-color: #494f59;
     //background-color: #3b73d1;
     color: #fff;
-    padding: 240px 0 0 0;
+    padding: 180px 0 0 0;
 
     .objective_block {
         text-align: left;
@@ -102,3 +97,104 @@
         }
     }
 }
+
+
+.hidden {
+    transition: all 2s;
+}
+
+@media screen and (max-width: 800px) {
+    .container1 {
+        padding: 70px 0 0 0;
+        .img .profile-img .profile-current-img {
+            height: 400px;
+        }
+       .img .profile-img .next-img-c .next-img {
+            height: 400px;
+        }
+
+        h1 {
+            letter-spacing: 1px;
+            top: 85%;
+            left: 35%;
+            font-size: 4em;
+        }   
+        .objective_block .objective {
+            padding: 60px 8px 0px 20px;
+            box-sizing: border-box;
+            line-height: 18px;
+            font-size: 16px;
+        }     
+    }
+
+
+    .container2 .objective_block {
+        width: 94%;
+        .objective {
+            line-height: 18px;
+            font-size: 16px;
+        }    
+    }
+    
+
+}
+
+
+@media screen and (max-width: 700px) {
+    .container1 {
+        h1 {
+            display: none;
+        } 
+    }
+    .container2 {
+        padding: 50px 0 0 0;
+        .objective_block .objective .h2 {
+            font-size: 20px;
+            line-height: 24px;
+            padding: 0;
+            margin: 8px 0;
+        }
+    }
+    .video {
+        .hover {
+            width: 100%;
+        }
+       .main_project video {
+            width: 96% !important;
+            margin: 0 auto;
+        } 
+    }
+    
+}
+
+
+
+@media screen and (max-width: 650px) {
+    .container1 {
+        .objective_block {
+            width: 100%;
+            margin: 0 auto;
+            .objective {
+                padding: 30px 0px 0px 0px;
+            }
+        }
+        .img {
+            width: 100%;
+            .profile-img .profile-current-img {
+                position: relative;
+            }
+        }
+        
+        h1 {
+            letter-spacing: 1px;
+            top: 170%;
+            left: 0;
+            width: 100%;
+            font-size: 3em;
+        }
+        .container {
+            flex-direction: column;
+        }
+    }
+}
+

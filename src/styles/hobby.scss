@@ -1,0 +1,172 @@
+.h2 {
+    font-size: 44px;
+    line-height: 56px;
+    font-family: 'Libre Baskerville', serif;
+    font-family: 'Carme', sans-serif; 
+    background-color: transparent;
+    padding: 0 0 60px 0;
+}
+
+.hobby {
+    background: linear-gradient(to right, #00586a, #67d7b6, #78ffd6);
+    padding: 60px 0 0 0;
+    margin: 0 0 -8px 0;
+    position: relative;
+    .video {
+        width: 90%;
+        margin: 0 auto;
+        max-width: 1000px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 0 60px 0;
+        color: #fff;
+        text-shadow: 1px 1px 0px rgba(255, 255, 255, 1), 5px 4px 0px rgba(0, 0, 0, 0.15);
+        z-index: 2;
+    }
+    .video_description {
+        font-size: 26px;
+        line-height: 34px;
+        padding: 0 0 0 50px;
+        opacity: 1;
+        transition: all 2s;
+        font-family: 'Libre Baskerville', serif;
+        font-family: 'Carme', sans-serif; 
+        z-index: 2;
+    }
+}
+
+
+
+
+@media screen and (max-width: 800px) {
+    .hobby {
+      background: linear-gradient(to right, #00586a, #67d7b6, #035b6c);
+        .h2 {
+            font-size: 26px;
+            line-height: 30px;
+            padding: 60px 0 16px 0 ;
+            &:nth-child(3) {
+                padding: 20px 0 16px 0 ;
+            }
+        }
+        .video_description {
+            font-size: 16px;
+            line-height: 20px;
+            padding: 16px 0 0 0;
+        }
+        .video {
+            flex-direction: column;
+            padding: 0;
+            text-shadow: 1px 1px 0px black, 5px 4px 0px rgba(0, 0, 0, 0.15);
+            video {
+                width: 96%;
+            }
+        }
+    }
+
+}
+
+
+
+// ((((((((((((((((((((((((((((((((((((((((((((((((((
+
+  
+  .body {
+    height: 100vh;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    svg {
+        right: 0;
+        position: fixed;
+        top: 25%;
+        width: 50%;
+    }
+  }
+  
+  #Horse_Tail {
+    animation: horse-tail 0.6s ease-in-out infinite alternate;
+  }
+  
+  #Horse_Front_Hair {
+    animation: horse-hair 0.6s ease-in-out 0.2s infinite alternate;
+  }
+  
+  #Girl_Back_Hair {
+    animation: girl-hair 0.6s ease-in-out infinite alternate;
+  }
+  
+  @keyframes horse-tail {
+    from {
+      transform: translateY(-120px) translateX(-65px);
+    }
+    to {
+      transform: translateY(-115px) translateX(-61px);
+    }
+  }
+  
+  @keyframes horse-hair {
+    from {
+      transform: translateY(-120px) translateX(-65px);
+    }
+    to {
+      transform: translateY(-115px) translateX(-63px);
+    }
+  }
+  
+  @keyframes girl-hair {
+    from {
+      transform: translateY(-112px) translateX(-57px);
+    }
+    to {
+      transform: translateY(-112px) translateX(-54px);
+    }
+  }
+  
+
+
+@media screen and (max-width: 1100px) {
+    div.body svg {
+        width: 40%;
+    }
+
+
+}
+
+
+@media screen and (max-width: 800px) {
+    div.body {
+      bottom: 0;
+      top: unset;
+      position: unset;
+      height: auto;
+        svg {
+            width: 60%;
+            z-index: 1;
+            left: 0;
+            margin: auto;
+            z-index: 1;
+            height: 284px;
+            top: unset;
+            bottom: 0;
+            position: absolute;
+            &:hover {
+                transform: scale(1.3);
+                transition: all 1.2s;
+            }
+        }        
+    }
+
+
+}
+
+@media screen and (max-width: 600px) {
+    div.body {
+        svg {
+            width: 80%;
+        }        
+    }
+
+
+}

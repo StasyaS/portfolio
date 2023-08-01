@@ -19,8 +19,12 @@ export const Header = () => {
                     <div className="first"></div>
                     <div className="first"></div>
                 </div>
-                <Link to='/'>Page about me</Link>
-                <Link to='/hobby'>My life </Link>
+                <div className="header">
+                    <div  className={"header_mob " + ((isSwitch === true) ? 'open' : "")}>
+                        <Link to='/'>Page about me</Link>
+                        <Link to='/hobby'>My hobby </Link>
+                    </div>
+                </div>
             </div>
         </header> 
     )

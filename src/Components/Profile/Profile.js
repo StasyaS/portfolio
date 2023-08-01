@@ -1,8 +1,10 @@
 import { useEffect, useState } from 'react';
 import '../../styles/profile.scss';
-
-const photos = ["./img/999.jpg", "./img/2022.jpg", "./img/22.jpg","./img/33.jpg","./img/44.jpg","./img/55.jpg"] ;
-
+import { photos } from './data';
+// ./
+// ../
+import arrow_down from '../../images/icons/arrow_down.png';
+import arrow_downYELL from '../../images/icons/arrow_downYELL.png';
 
 
 const Profile = () => {
@@ -17,16 +19,14 @@ const Profile = () => {
     })
     const clickShow = () => {
         setIsShow(!isShow)
-    }
+    };
     const clickShow2 = () => {
-        setIsShow2(!isShow)
+        setIsShow2(!isShow2)
     }
 
     useEffect(()=>{
         const n = photo.next;
-        console.log(photo);
         setTimeout(()=>{
-
             setIsMovePhoto(true)
             setTimeout(()=>{
                 isPhoto({
@@ -50,7 +50,7 @@ const Profile = () => {
     },[render])
 
 
-    // console.log(setIsMovePhoto);
+    console.log();
 
     return (
         <div>
@@ -72,15 +72,16 @@ const Profile = () => {
                    
                     <div className="objective_block">
                         <div className="objective">
-                            To leverage my skills and experience as a front-end developer to
-                            contribute to the success of a dynamic organization. I aim to utilize my expertise in HTML, CSS,
-                            JavaScript, and frameworks like React to create engaging and user-friendly web interfaces.
+                            Hello buddy, My name is Stasya! 
+                            <br/>To leverage my skills and experience as a front-end developer to
+                            contribute to the success of a dynamic organization. I aim to utilize my expertise in HTML5, CSS3,
+                            JavaScript, Git, Magento4, Umbraco, WordPress, Jira ... and  React to create engaging and user-friendly web interfaces.
                             <p>
                                 With a strong eye for design and a passion for delivering high-quality code, I am committed to
                                 crafting seamless and visually appealing websites that provide exceptional user experiences.
                             </p>
                             { isShow === true && 
-                                <>
+                                <div className='hidden'>
                                     <p>
                                         I am dedicated to surpassing expectations and delivering outstanding user experiences.
                                     </p>
@@ -91,10 +92,10 @@ const Profile = () => {
                                     <p>
                                         I am eager to join a forward-thinking organization where I can utilize my talents to contribute to innovative web development initiatives and foster continuous growth.
                                     </p>
-                                </>
+                                </div>
                             }
                         </div>
-                        <img src="img/arrow_down.png" onClick={clickShow}/>
+                        <img src={arrow_down} onClick={clickShow}/>
                     </div>
 
                 </div>
@@ -104,10 +105,7 @@ const Profile = () => {
                 <div className="container ">
                     <div className="objective_block">
                         <div className="objective">
-                            Hello everyone! 
-                            <p>
-                                Today, I'm excited to share with you the world of front-end development and how it plays a crucial role in creating captivating and user-friendly web experiences. 
-                            </p>
+                            Today, I'm excited to share with you the world of front-end development and how it plays a crucial role in creating captivating and user-friendly web experiences. 
                             <p>
                                 My name is Nastasiia, and I'm here to guide you through the exciting journey of front-end development.
                             </p>
@@ -204,7 +202,7 @@ const Profile = () => {
                                 </>
                             }
                         </div>
-                        <img src="img/arrow_downYELL.png" onClick={clickShow2} />
+                        <img src={arrow_downYELL} onClick={clickShow2} />
                     </div>
                 </div>
             </div>

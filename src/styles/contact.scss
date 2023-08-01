@@ -1,6 +1,6 @@
 
 
-.width {
+.contacts_block {
     background-color: #fceb21;
     background-color: #fdff00;    
 }
@@ -46,4 +46,35 @@
             padding: 0 7px 0 7px;
         }
     }
+    .phone img {
+        width: 80px;
+        height: 80px;
+    }
+}
+
+
+@media screen and (max-width: 800px) {
+    .contacts {
+        h2 {
+            font-size: 2rem;
+        }
+        .my {
+            font-size: 0.8rem;
+            margin: 0 8px 0 0;
+        } 
+        .contIcon svg {
+            width: 50px;
+            height: 50px;
+        }       
+        .contIcon img {
+            width: 42px;
+            height: 40px;
+            padding: 0 5px 0 4px;
+        }
+        .phone img {
+            width: 49px;
+            height: 45px;
+        }
+    }
+
 }
